@@ -6,6 +6,7 @@ LABEL version = "latest-arm"
 RUN apk update && \
     apk upgrade && \
     apk add git && \
+    apk add python && \
     git clone https://github.com/bkimminich/juice-shop.git
 WORKDIR /juice-shop
 RUN npm install --production --unsafe-perm
