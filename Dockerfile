@@ -1,5 +1,5 @@
 # OWASP Juice Shop - An intentionally insecure JavaScript Web Application
-FROM            arm32v7/node:6
+FROM            arm32v7/node:12
 MAINTAINER      Bjoern Kimminich <bjoern.kimminich@owasp.org>
 LABEL version = "5.1.0-SNAPSHOT"
 
