@@ -7,7 +7,7 @@ RUN apk update && \
     apk add python && \
     git clone https://github.com/bkimminich/juice-shop.git
 WORKDIR /juice-shop
-RUN npm install --production --unsafe-perm
+RUN npm install --production --unsafe-perm --max-old-space-size=16000
 
 FROM            arm32v7/node:12-alpine
 MAINTAINER      Bjoern Kimminich <bjoern.kimminich@owasp.org>
